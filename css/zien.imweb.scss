@@ -1,5 +1,5 @@
 *{
-  font-family: 'Estedad' !important
+  font-family: 'Quicksand', 'Noto Sans KR', sans-serif !important
 }
 
 // #header06 {
@@ -103,81 +103,85 @@
             font-family: sans-serif;
         }
 
+#heroSection{
         /* 슬라이더 컨테이너 스타일 */
-        .slider-container {
+        &.slider-container {
             width: 100%;
             max-width: 1200px;
             padding: 0 50px; /* 좌우 버튼 공간 확보 */
             position: relative;
-        }
-
-        .swiper {
+             .swiper {
             width: 100%;
             height: auto;
             border-radius: 12px;
             overflow: hidden;
+            
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    display: block;
+                    border-radius: 8px;
+                }
+            }
+
+            /* 네비게이션 버튼 커스텀 스타일 */
+            .swiper-button-next,
+            .swiper-button-prev {
+                color: #333; /* 버튼 색상 */
+                background: rgba(255, 255, 255, 0.8);
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                transition: all 0.3s ease;
+            }
+
+            .swiper-button-next:after,
+            .swiper-button-prev:after {
+                font-size: 18px; /* 화살표 크기 조절 */
+                font-weight: bold;
+            }
+
+            .swiper-button-next:hover,
+            .swiper-button-prev:hover {
+                background: #333;
+                color: #fff;
+            }
+
+            /* 배치 조정을 위해 컨테이너 기준으로 버튼 위치 고정 */
+            .swiper-button-prev { left: 0px; }
+            .swiper-button-next { right: 0px; }
+
+            /* 페이지네이션 (불릿) 커스텀 스타일 */
+            .swiper-pagination {
+                position: relative;
+                margin-top: 20px;
+            }
+
+            .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+                background: #ccc;
+                opacity: 1;
+                transition: all 0.3s ease;
+            }
+
+            .swiper-pagination-bullet-active {
+                background: #333; /* 활성화된 불릿 색상 */
+                width: 30px; /* 활성화 시 가로로 길어지는 효과 */
+                border-radius: 5px;
+            }
+         }
         }
 
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #fff;
-        }
+       
+    }
 
-        .swiper-slide img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            display: block;
-            border-radius: 8px;
-        }
-
-        /* 네비게이션 버튼 커스텀 스타일 */
-        .swiper-button-next,
-        .swiper-button-prev {
-            color: #333; /* 버튼 색상 */
-            background: rgba(255, 255, 255, 0.8);
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-        }
-
-        .swiper-button-next:after,
-        .swiper-button-prev:after {
-            font-size: 18px; /* 화살표 크기 조절 */
-            font-weight: bold;
-        }
-
-        .swiper-button-next:hover,
-        .swiper-button-prev:hover {
-            background: #333;
-            color: #fff;
-        }
-
-        /* 배치 조정을 위해 컨테이너 기준으로 버튼 위치 고정 */
-        .swiper-button-prev { left: 0px; }
-        .swiper-button-next { right: 0px; }
-
-        /* 페이지네이션 (불릿) 커스텀 스타일 */
-        .swiper-pagination {
-            position: relative;
-            margin-top: 20px;
-        }
-
-        .swiper-pagination-bullet {
-            width: 10px;
-            height: 10px;
-            background: #ccc;
-            opacity: 1;
-            transition: all 0.3s ease;
-        }
-
-        .swiper-pagination-bullet-active {
-            background: #333; /* 활성화된 불릿 색상 */
-            width: 30px; /* 활성화 시 가로로 길어지는 효과 */
-            border-radius: 5px;
-        }
 
