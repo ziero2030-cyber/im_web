@@ -75,6 +75,7 @@
             position:unset !important;
             .css_wrap{
                 border : 0 ;
+                padding-left: 0;
             }
         }
     }
@@ -186,5 +187,22 @@
 
        
     }
+
+    #blockWrap{
+        >div:first-child{
+            position: fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:1px;
+            z-index: 1000;
+            .top_utilemenu{
+
+            }
+
+        }
+    }
+
+    
 
 
