@@ -6,9 +6,8 @@
 #header06 {
   display: flex;
   flex-wrap: wrap;
-  content: center;
+  background-color: #fff;
 }
-
 #header06 > div:first-child {
   background-color: #501960 !important;
   color: white !important;
@@ -17,10 +16,33 @@
   cursor: pointer;
   margin: 0 !important;
   line-height: 35px;
-  border-bottom: 10px solid #222;
+}
+#header06 > div:nth-child(2) {
+  width: 100%;
+}
+#header06 > div:nth-child(2) > div {
+  position: unset !important;
+}
+#header06 > div:nth-child(2) > div .logoArea {
+  text-align: center;
+}
+#header06 .toplink {
+  display: none;
+}
+#header06 .gNavi {
+  border-top: 5px solid black;
+}
+#header06 .gNavi > ul {
+  justify-content: center;
 }
 #header06 .gNavi > ul > li > a {
   padding: 0 10px;
+}
+#header06 .cssmenu .clearfix {
+  position: unset !important;
+}
+#header06 .cssmenu .clearfix .css_wrap {
+  border: 0;
 }
 
 #winw .m_visual {

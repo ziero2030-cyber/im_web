@@ -22,36 +22,59 @@
 // }
 // }
 
- #header06 {
-    display: flex;
-    flex-wrap: wrap;
-    content: center;
- }
+
 
 
 #header06{ 
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
      > div:first-child{
-    background-color:#501960 !important;
-	color:white !important;
-	text-align:center;
-	font-size:12px;
-	cursor:pointer;
-    margin:0 !important;
-    line-height:35px;  
-    border-bottom: 10px solid #222;
-  }
-  .gNavi{ 
-  
-      > ul {  
-        // border-top: 10px  solid #222;
+        background-color:#501960 !important;
+        color:white !important;
+        text-align:center;
+        font-size:12px;
+        cursor:pointer;
+        margin:0 !important;
+        line-height:35px;  
+      
+    }
+    > div:nth-child(2){
+       
+        
+        width:100%;
+        >div{
+            position:unset !important;
+            .logoArea {
+                text-align: center;
 
-        >  li {
-            > a{
-            padding:0 10px;
-           }
+            }
         }
     }
-  }
+    .toplink{
+        display: none;
+       }
+    .gNavi{ 
+        border-top: 5px solid black;
+        > ul {  
+            // border-top: 10px  solid #222;
+            justify-content: center;
+
+            >  li {
+                > a{
+                padding:0 10px;
+            }
+            }
+        }
+    }
+    .cssmenu{
+        .clearfix{
+            position:unset !important;
+            .css_wrap{
+                border : 0 ;
+            }
+        }
+    }
 }
 
 #winw{
