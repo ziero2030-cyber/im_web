@@ -31,10 +31,11 @@
 	cursor:pointer;
     margin:0 !important;
     line-height:35px;  
+    border-bottom: 10px solid #222;
   }
   .gNavi{ 
   
-      > ul {   border-top: 10px  solid #222;
+      > ul {  
         >  li {
             > a{
             padding:0 10px;
