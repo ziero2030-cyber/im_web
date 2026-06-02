@@ -27,9 +27,6 @@
   line-height: 35px;
   border-bottom: 10px solid #222;
 }
-#header06 .gNavi > ul {
-  border-top: 10px solid #222;
-}
 #header06 .gNavi > ul > li > a {
   padding: 0 10px;
 }
