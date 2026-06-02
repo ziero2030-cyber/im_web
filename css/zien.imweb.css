@@ -3,8 +3,10 @@
   font-family: "Estedad" !important;
 }
 
-#header06 .logoArea img {
-  display: flex !important;
+#header06 {
+  display: flex;
+  flex-wrap: wrap;
+  content: center;
 }
 
 #header06 > div:first-child {
