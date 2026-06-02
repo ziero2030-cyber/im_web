@@ -26,10 +26,15 @@
   line-height: 35px;
   border-bottom: 10px solid #222;
 }
+#header06 .gNavi > ul {
+  border-top: 10px solid #222;
+}
 #header06 .gNavi > ul > li > a {
   padding: 0 10px;
 }
 
-.gNavi > ul {
-  border-top: 10px solid #222;
+#winw .m_visual {
+  height: 0 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
